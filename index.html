@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+    <link rel="stylesheet" href="https://g.alicdn.com/de/prismplayer/2.8.2/skins/default/aliplayer-min.css" />
+    <title id="title"></title>
+  </head>
+
+  <body>
+    <div id="app-box"></div>
+    <script charset="utf-8" type="text/javascript" src="https://g.alicdn.com/de/prismplayer/2.8.2/aliplayer-min.js"></script>
+    <script charset="utf-8" type="text/javascript" src="https://g.alicdn.com/de/prismplayer/2.8.2/aliplayer-h5-min.js"></script>
+    <script>
+     var corp_name = sessionStorage.getItem("corp_name");
+     document.title=sessionStorage.getItem("corp_name").replace(/\"/g, "");
+    </script>
+    <!-- built files will be auto injected -->
+  </body>
+
+</html>
